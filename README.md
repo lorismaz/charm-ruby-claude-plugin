@@ -115,18 +115,15 @@ Bubbletea.run(CounterModel.new)
 
 ## Installation
 
-Install from GitHub:
+1. Add the marketplace:
+   ```bash
+   claude plugins marketplace add lorismaz/charm-ruby-claude-plugin
+   ```
 
-```bash
-claude plugins add lorismaz/charm-ruby-claude-plugin
-```
-
-Or clone locally:
-
-```bash
-git clone https://github.com/lorismaz/charm-ruby-claude-plugin.git
-claude plugins add ./charm-ruby-claude-plugin
-```
+2. Install the plugin:
+   ```bash
+   claude plugins add charm-ruby@charm-ruby
+   ```
 
 The skill, commands, and agent will be automatically available after installation.
 

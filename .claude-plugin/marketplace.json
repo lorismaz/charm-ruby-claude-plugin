@@ -1,0 +1,27 @@
+{
+  "name": "charm-ruby",
+  "owner": {
+    "name": "Loris Mazloum",
+    "email": "loris@mazloum.com"
+  },
+  "metadata": {
+    "description": "Plugins for building beautiful CLI tools in Ruby",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "charm-ruby",
+      "source": ".",
+      "description": "Build beautiful, interactive CLI tools in Ruby using the charm-ruby ecosystem (Bubble Tea, Lipgloss, Bubbles, Huh, and more)",
+      "version": "1.0.0",
+      "author": {
+        "name": "Loris Mazloum"
+      },
+      "homepage": "https://charm-ruby.dev",
+      "repository": "https://github.com/lorismaz/charm-ruby-claude-plugin",
+      "license": "MIT",
+      "keywords": ["ruby", "cli", "tui", "terminal", "charm", "bubbletea", "lipgloss"],
+      "category": "development"
+    }
+  ]
+}
