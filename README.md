@@ -115,7 +115,20 @@ Bubbletea.run(CounterModel.new)
 
 ## Installation
 
-This plugin is part of your Claude Code installation. The skill, commands, and agent are automatically available.
+Install from GitHub:
+
+```bash
+claude plugins add lorismaz/charm-ruby-claude-plugin
+```
+
+Or clone locally:
+
+```bash
+git clone https://github.com/lorismaz/charm-ruby-claude-plugin.git
+claude plugins add ./charm-ruby-claude-plugin
+```
+
+The skill, commands, and agent will be automatically available after installation.
 
 ## License
 
