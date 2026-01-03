@@ -115,14 +115,16 @@ Bubbletea.run(CounterModel.new)
 
 ## Installation
 
+In Claude Code, run these slash commands:
+
 1. Add the marketplace:
-   ```bash
-   claude plugins marketplace add lorismaz/charm-ruby-claude-plugin
+   ```
+   /plugin marketplace add lorismaz/charm-ruby-claude-plugin
    ```
 
 2. Install the plugin:
-   ```bash
-   claude plugins add charm-ruby@charm-ruby
+   ```
+   /plugin install charm-ruby@charm-ruby
    ```
 
 The skill, commands, and agent will be automatically available after installation.
