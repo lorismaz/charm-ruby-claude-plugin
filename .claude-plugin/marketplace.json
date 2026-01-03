@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "charm-ruby",
-      "source": ".",
+      "source": "./",
       "description": "Build beautiful, interactive CLI tools in Ruby using the charm-ruby ecosystem (Bubble Tea, Lipgloss, Bubbles, Huh, and more)",
       "version": "1.0.0",
       "author": {
