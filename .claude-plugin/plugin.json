@@ -1,0 +1,19 @@
+{
+  "name": "charm-ruby",
+  "version": "1.0.0",
+  "description": "Build beautiful, interactive CLI tools in Ruby using the charm-ruby ecosystem (Bubble Tea, Lipgloss, Bubbles, Huh, and more)",
+  "author": {
+    "name": "Mazlabs",
+    "url": "https://github.com/mazlabs"
+  },
+  "keywords": [
+    "ruby",
+    "cli",
+    "tui",
+    "terminal",
+    "charm",
+    "bubbletea",
+    "lipgloss",
+    "interactive"
+  ]
+}
