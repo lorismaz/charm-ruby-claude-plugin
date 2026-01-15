@@ -407,22 +407,36 @@ end
 - Keep `view` methods fast; avoid heavy computation
 - Use commands for async operations (file I/O, network)
 - Batch style creation; don't recreate styles every render
+- Only re-render when state actually changes
 
 ### Testing
 - Test `update` logic by calling with mock messages
 - Verify state transitions independently from rendering
 - Use Aruba gem for integration testing of complete CLI
+- See `references/testing-tui-applications.md` for comprehensive patterns
 
 ### Error Handling
 - Catch errors in commands and return error messages
 - Display user-friendly error messages with styled output
 - Provide clear feedback for invalid input in forms
+- Use meaningful exit codes (0 success, non-zero errors)
+- Send errors to stderr, output to stdout
 
 ### User Experience
 - Support vim-style keys (j/k/h/l) alongside arrows
 - Always show quit instructions (q or Ctrl+C)
 - Use spinners for any operation over 100ms
 - Provide progress feedback for long operations
+- Show concise, meaningful output (avoid verbose confirmations)
+- See `references/cli-ux-best-practices.md` for comprehensive UX patterns
+
+### Accessibility
+- Respect `NO_COLOR` environment variable
+- Don't rely solely on color to convey meaning (use symbols too)
+- Support `--no-color` flag for explicit control
+- Use ANSI 16 colors for maximum terminal compatibility
+- Provide JSON output mode for machine parsing
+- See `references/accessibility-guidelines.md` for complete guidelines
 
 ---
 
@@ -489,6 +503,14 @@ For advanced functionality, see the detailed reference guides:
 - `references/ntcharts-visualization.md` - Terminal charts (sparklines, bar charts, line charts, heatmaps)
 - `references/bubblezone-mouse.md` - Mouse event handling and clickable zones
 - `references/harmonica-animation.md` - Spring physics animations with angular_frequency and damping_ratio
+
+## UX, Accessibility, and Testing
+
+For building production-quality CLI applications:
+
+- `references/cli-ux-best-practices.md` - Comprehensive CLI UX patterns (errors, help, progress, colors)
+- `references/accessibility-guidelines.md` - NO_COLOR support, screen readers, keyboard navigation
+- `references/testing-tui-applications.md` - Unit testing models, integration testing with Aruba
 
 ---
 

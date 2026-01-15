@@ -1,5 +1,5 @@
 ---
-name: init
+name: new-cli
 description: Scaffold a new charm-ruby CLI project with Bubble Tea architecture
 argument-hint: "[project-name]"
 allowed-tools:
